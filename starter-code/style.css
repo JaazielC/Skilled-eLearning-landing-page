@@ -1,0 +1,314 @@
+:root {
+    --color-light-blue: hsl(234, 25%, 52%);
+    --color-dark-blue: hsl(233, 54%, 16%);
+    --color-gray: hsl(232, 10%, 56%);
+    --color-hot-pink: hsl(341, 92%, 62%);
+    --color-pink: hsl(341, 100%, 83%);
+    --color-white: hsl(0, 0%, 100%);
+    --gradient-white-bg: linear-gradient(
+        180deg,
+        hsl(0deg 0% 100%) 0%,
+        hsl(240deg 100% 100%) 9%,
+        hsl(240deg 100% 99%) 18%,
+        hsl(240deg 100% 99%) 27%,
+        hsl(240deg 100% 99%) 36%,
+        hsl(231deg 100% 99%) 45%,
+        hsl(240deg 100% 98%) 55%,
+        hsl(234deg 100% 98%) 64%,
+        hsl(235deg 100% 98%) 73%,
+        hsl(235deg 100% 98%) 82%,
+        hsl(236deg 100% 97%) 91%,
+        hsl(236deg 100% 97%) 100%);
+    --gradient-orange-pink: linear-gradient(
+        0deg,
+        hsl(322deg 87% 55%) 0%,
+        hsl(330deg 89% 57%) 14%,
+        hsl(337deg 91% 58%) 29%,
+        hsl(344deg 92% 59%) 43%,
+        hsl(351deg 94% 60%) 57%,
+        hsl(358deg 96% 62%) 71%,
+        hsl(6deg 98% 63%) 86%,
+        hsl(13deg 100% 64%) 100%);
+    --gradient-blue-pink: linear-gradient(
+        180deg,
+        hsl(237deg 100% 64%) 0%,
+        hsl(241deg 99% 64%) 5%,
+        hsl(245deg 99% 63%) 10%,
+        hsl(249deg 98% 63%) 14%,
+        hsl(253deg 98% 63%) 19%,
+        hsl(258deg 97% 62%) 24%,
+        hsl(261deg 96% 62%) 29%,
+        hsl(266deg 96% 61%) 33%,
+        hsl(270deg 95% 61%) 38%,
+        hsl(274deg 94% 60%) 43%,
+        hsl(278deg 94% 60%) 48%,
+        hsl(282deg 93% 60%) 52%,
+        hsl(286deg 92% 59%) 57%,
+        hsl(290deg 91% 59%) 62%,
+        hsl(294deg 92% 58%) 67%,
+        hsl(298deg 91% 58%) 71%,
+        hsl(302deg 90% 57%) 76%,
+        hsl(306deg 89% 57%) 81%,
+        hsl(310deg 89% 57%) 86%,
+        hsl(314deg 88% 56%) 90%,
+        hsl(318deg 88% 56%) 95%,
+        hsl(322deg 87% 55%) 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 300px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-size: 16px;
+    background: var(--gradient-white-bg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    overflow-x: hidden;
+}
+
+main {
+    margin: 0 .8rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+header > button:hover,
+header > button:focus {
+    background-color: var(--color-light-blue);
+}
+
+.title {
+    margin-top: 2.375rem;
+}
+
+.title > h1 {
+    font-size: 2.5rem;
+    color: var(--color-dark-blue);
+}
+
+.title > p {
+    margin-top: 1.625rem;
+    line-height: 1.5;
+    color: var(--color-gray);
+}
+
+.title > button {
+    font-family: inherit;
+    margin-top: 1.5rem;
+    padding: 17px 38px;
+    font-weight: 700;
+    font-size: 1.015rem;
+    color: var(--color-white);
+    background: var(--gradient-orange-pink);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.title > button:hover,
+.title > button:focus {
+    opacity: 0.5;
+}
+
+#image-hero {
+    width: 103%;
+    content: url(assets/image-hero-mobile@2x.png);
+    margin-top: 2.5625rem;
+}
+
+.course-0 {
+    background: var(--gradient-orange-pink);
+    border-radius: 10px;
+}
+
+.course-0 h2 {
+    color: var(--color-white);
+    padding: 1.25em;
+}
+
+.course-icon {
+    position: absolute;
+    top: -30px;
+}
+
+.course-card {
+    background: var(--color-white);
+    padding: 3.5rem 1.75rem 2rem 1.75rem;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+    position: relative;
+}
+
+.course-card p {
+    margin-top: 1em;
+    color: var(--color-gray);
+    line-height: 26px;
+}
+
+.course-card a {
+    display: inline-block;
+    margin-top: 1.5em;
+    font-weight: 700;
+    font-size: 1.125rem;
+    text-decoration: none;
+    color: var(--color-hot-pink);
+}
+
+.course-card a:hover,
+.course-card a:focus {
+    color: var(--color-pink)
+}
+
+.btn {
+    font-family: inherit;
+    padding: 14px 23px;
+    color: var(--color-white);
+    background: var(--color-dark-blue);
+    font-weight: bold;
+    font-size: 1.015rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--color-dark-blue);
+    margin-top: 5em;
+}
+
+footer div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.25em 1em;
+}
+
+footer div .btn {
+    background: var(--gradient-blue-pink);
+}
+
+footer div .btn:hover,
+footer div .btn:focus {
+    filter: brightness(200%);
+}
+
+@media (min-width: 768px) {
+    body{
+        max-width: 100vw;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    main {
+        margin: 0 2.5em;
+    }
+
+    header {
+        margin-top: 1.5em;
+    }
+
+    .title {
+        margin-top: 6.1875rem;
+        margin-right: 17em;
+        margin-bottom: 11.625em;
+    }
+
+    #image-hero {
+        content: url(assets/image-hero-tablet@2x.png);
+        position: absolute;
+        width: 45em;
+        top: -10em;
+        right: -20em;
+        z-index: -1;
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 3.5rem 10px;
+    }
+
+    .course-card {
+        margin-top: 0
+    }
+
+    .course-0 h2 {
+        padding: 3.5rem 1.3125rem 8.6875rem 2rem;
+    }
+
+    .course-card {
+        margin: 0;
+    }
+}
+
+@media (min-width: 976px) {
+    .title {
+        margin-bottom: 14.75em;
+    }
+}
+
+@media (min-width: 1440px) {
+    main {
+        margin: 0 10.3125em;
+    }
+
+    .title {
+        margin-top: 10.75em;
+        margin-right: 40em;
+        margin-bottom: 14.125em;
+    }
+
+    .title h1 {
+        font-size: 3.5rem;
+    }
+
+    .title p {
+        font-size: 1.125rem;
+        margin-top: 2.4em;
+    }
+
+    .title button {
+        margin-top: 2.5em
+    }
+
+    #image-hero {
+        content: url(assets/image-hero-desktop@2x.png);
+        position: absolute;
+        width: 63em;
+        top: -12em;
+    }
+    
+    .courses {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 5em 1.875em;
+    }
+
+    .course-card {
+        padding: 4em 2em 2.5em 2em;
+        height: 20.125em;
+    }
+
+    .course-card p {
+        line-height: 28px;
+    }
+
+    .course-card a {
+        margin-top: 4em;
+    }
+
+    .course-0 h2{
+        font-size: 2rem;
+        padding: 2em 1em 4.3125em 1em;
+    }
+}
