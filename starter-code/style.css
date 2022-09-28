@@ -239,6 +239,8 @@ footer div .btn:focus {
     }
 
     .course-card {
+        display: flex;
+        flex-direction: column;
         margin-top: 0
     }
 
@@ -246,8 +248,8 @@ footer div .btn:focus {
         padding: 3.5rem 1.3125rem 8.6875rem 2rem;
     }
 
-    .course-card {
-        margin: 0;
+    .course-card p{
+        margin-bottom: auto;
     }
 }
 
@@ -301,10 +303,6 @@ footer div .btn:focus {
 
     .course-card p {
         line-height: 28px;
-    }
-
-    .course-card a {
-        margin-top: 4em;
     }
 
     .course-0 h2{
